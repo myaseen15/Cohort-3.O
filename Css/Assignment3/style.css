@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Habibi&family=Kaushan+Script&family=Lilita+One&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --robo-font:"Roboto", sans-serif;
+}
+
+html, body {
+  background-color: rgb(252, 246, 235);
+  width: 100%;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5{
+  text-transform: uppercase;
+  font-family: var(--robo-font);
+}
+header{
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  text-transform: uppercase;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+header nav .nav-brand{
+  font-family: var(--robo-font);
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+ .nav-brand span{
+  color: rgb(255, 123, 0);
+}
+
+header nav ul{
+ display: flex; 
+ gap: 40px;
+ list-style: none;
+ padding: 0 15px;
+}
+
+header nav ul li{
+  font-family: var(--robo-font);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-social{
+  display: flex;
+  gap: 30px;
+}
+.nav-social i{
+  font-size: 20px;
+}
+
+main{
+  height: 82%;
+  padding: 15px 40px 0 40px;
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-sec{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-sec .hero-text{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.left-sec .hero-text h1{
+  font-family: var(--robo-font);
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.left-sec .hero-text h1 b{
+  font-family: "Lilita One", sans-serif;
+  color: rgba(238, 89, 34, 0.877);
+}
+
+.left-sec .hero-text h3{
+  color: rgba(238, 89, 34, 0.877);
+}
+
+.left-sec .hero-text h2{
+  font-size: 29px;
+  font-weight: 500;
+  
+}
+
+
+.left-sec .hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.left-sec .hero-content h4{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+.left-sec .hero-content p{
+  font-family: "poppins",sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(105, 105, 105);
+}
+
+
+.center-sec{
+  display: flex;
+}
+
+.center-sec .hero-img{
+  object-fit: cover;
+  height: 650px;
+  width: 700px;
+  border-radius: 25px;
+}
+
+
+.right-sec{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.right-sec .size-section{
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.right-sec .size-container{
+  display: flex;
+  gap: 5px;
+}
+.right-sec .size-container span{
+  font-family: var(--robo-font);
+  border-radius: 12px;
+  background-color: rgb(247, 226, 200);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 14px;
+}
+.right-sec .size-container span:nth-child(2){
+  background-color: orangered;
+  color: white;
+}
+.right-sec .size-section .size-guide{
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.right-sec .size-section .size-guide i {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.color-section{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.img-flex-container{
+  display: flex;
+  gap: 10px;
+}
+.img-flex-container .img-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+.img-card img{  
+  border-radius: 13px;
+  background-color: rgb(219, 217, 217);
+  width: 80px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.img-flex-container .img-card p{
+  font-weight: 600;
+}
+.img-card .first-card-img{
+  border: 2px solid orange;
+  background-color: rgb(240, 224, 224) ;
+}
+
+.right-sec .buy-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-transform: uppercase;
+}
+
+.right-sec .buy-section button{
+  font-family: var(--robo-font);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  font-size:17px;
+  border-radius: 25px;
+  background-color: orangered;
+  border: none;
+  color: white;
+}
+.right-sec .buy-section button i{
+  font-size: 20px;
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 40% 30% 10% ;
+  grid-template-areas: 
+  "hero-top hero-top hero-top hero-top"
+  "hero-card1 hero-card2 hero-card3 hero-card4"
+  "hero-bottom1 hero-bottom1 hero-bottom2 hero-bottom2"
+}
+
+.hero-top{
+  background-color: aqua;
+  grid-area: hero-top;
+}
+.hero-card1{
+  background-color: antiquewhite;
+}
+.hero-card2{
+  background-color: rgb(146, 97, 32);
+}
+.hero-card3{
+  background-color: rgb(60, 253, 147);
+}
+.hero-card4{
+  background-color: antiquewhite;
+}
+.hero-bottom1{
+  background-color:chocolate;
+  grid-area: hero-bottom1;
+}
+.hero-bottom2{
+  background-color: yellowgreen;
+  grid-area: hero-bottom2;
+}
+.hero-footer{
+  background-color:plum;
+  /* grid-area: hero-footer; */
+}

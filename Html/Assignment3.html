@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input required type="text" id="name" placeholder="Enter Name" />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input required type="email" id="email" placeholder="Enter Email" />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input required type="password" id="password" placeholder="Enter Password" />
+        <br />
+        <br />
+        <label >
+          Gender:
+          <input required type="radio" name="gen" id="male">
+          <label for="male">Male</label>
+          <input required type="radio" name="gen" id="female">
+          <label for="female">Female</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Education Information</legend>
+        <label for="edu">Select Your Qualification</label>
+        <select name="" id="edu">
+          <option selected value="" disabled>Select Your Qualificaion</option>
+          <option value="">Matric</option>
+          <option value="">Intermediate</option>
+          <option value="">Graduation</option>
+          <option value="">Master</option>
+          <option value="">PhD</option>
+        </select>
+<br><br>
+                <label for="edu">Select Your Courses</label>
+        <select name="" id="edu">
+          <option selected value="" disabled>Select Your Courses</option>
+          <option value="">Web Development</option>
+          <option value="">AI and Data Scientist</option>
+          <option value="">E-commerce</option>
+          <option value="">Graphic Designing</option>
+          <option value="">Essential Of Computer</option>
+          <option value="">Techno Kids</option>
+        </select>
+
+      
+      <br>
+      </fieldset>
+            <fieldset>
+        <legend>Address Details</legend>
+
+        <label for="address">Address:</label>
+        <textarea rows="5" id="address" cols="60" placeholder="Enter YOur Address" ></textarea>
+        <br />
+        <br />
+        <label for="city">City:</label>
+        <input required type="text" id="city" placeholder="Enter Your City" />
+        <br />
+        
+      </fieldset>
+      <br>
+      <b>Terms and Conditions</b>
+      <p>Do not Break Rules </p>
+      <p>Do not Eat and Drink Food</p>
+      <p>Do not use Mobile</p>
+      
+      <input required type="checkbox"  id="terms">
+      <label for="terms">I accept the terms and condition</label>
+      <button>Submit</button>
+</fieldset>
+    </form>
+  </body>
+</html>
