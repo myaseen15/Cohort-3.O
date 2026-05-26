@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FBF9EB;
+}
+
+nav{
+  /* width: min(95%, 1200px); */
+  width: 100%;
+  border: solid ;
+  background-color: #FFFEFB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+nav .nav-part-1{
+  display: flex;
+  gap: 1rem;
+  /* font-size: clamp(1rem, 2vw,4rem); */
+  font-size: 1rem;
+}
