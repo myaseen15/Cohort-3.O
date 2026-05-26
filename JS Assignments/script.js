@@ -665,8 +665,6 @@
 
   // console.log(randomNum)
 
-// var str2 = "karachi";
-//   console.log(str2[str2.length-1])
 
 // var animal = "cat";
 
@@ -674,3 +672,42 @@
 
 // console.log(animal[2]+animal[1]+animal[0])
 
+
+// var str2 = "karachi";
+//   console.log(str2[str2.length-1])
+
+var fullName = "Muhammad Yaseen Khan";
+
+// var profile = fullName.split(' ')[0][0] + fullName.split(' ')[1][0];
+
+// console.log(profile.toUpperCase())
+
+// var word = fullName.split(' ');
+
+// console.log(word)
+
+// var initials = "";
+
+// for(let i = 0; i < word.length ; i++){
+//  initials += word[i][0]
+// }
+
+// console.log(initials.toUpperCase())
+
+// var init = fullName
+// .split(" ")
+// .map(word => word[0])
+
+// console.log(init.join('').toUpperCase())
+
+// var first = "Muhammad".toLowerCase()
+// var sec = "muhammad".toLowerCase()
+
+// console.log(first === sec)
+
+var actualEmail = "yaseen123@gmail.com";
+var actualPassword = "yaseen123@gmail.com";
+
+
+var email = "yaseen123@gmail.com";
+var password = "yaseen123@gmail.com";
