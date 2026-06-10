@@ -129,12 +129,41 @@
 
 // console.log(arr);
 
-console.log(
-  [1,2,3].includes("2")
-);
+// console.log(
+//   [1,2,3].includes("2")
+// );
 
-const arr = [1,2,3,4];
+// const arr = [1,2,3,4];
 
-const result = arr.filter(num => num > 2);
+// const result = arr.filter(num => num > 2);
 
-console.log(result);
+// console.log(result);
+
+// Intermediate Level 
+
+// let multi = function(a,b){
+// return a * b;
+// }
+
+// console.log(multi(10,3))
+
+// function add(a,b){
+//   return a * b;
+// }
+
+// var addfn = add(10,2)
+
+// console.log(addfn)
+
+let add = (a,b)=>{
+return a * b;
+}
+
+console.log(add(10,2))
+
+// function test(a,b){
+//     console.log(arguments[0]);
+//     console.log(arguments[1]);
+// }
+
+// test(100,200);
