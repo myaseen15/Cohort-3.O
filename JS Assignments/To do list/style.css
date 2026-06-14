@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+  width: 100% ;
+  height: 100vh;
+  border: solid;
+  display: grid;
+  grid-template-areas: "sidebar profile profile profile profile"
+                        "sidebar navbar navbar navbar navbar"
+                        "sidebar category category category category"
+                        "sidebar card card card card"
+                        "sidebar card1 card1 card1 card1"
+                        "sidebar pagination pagination pagination pagination"
+                        "sidebar footer footer footer footer";
+
+  }
+
+
+.sidebar{
+  grid-area: sidebar;
+  background-color: red;
+  display: grid;
+  grid-template-areas: "logo"
+                        "nav-items"
+                        "nav-items"
+                        "setting"
+                        "book-sec"  
+  ;
+}
+
+.logo{
+  background-color: gold;
+  grid-area: logo;
+
+}
+.nav-items{
+  background-color: dimgray;
+  grid-area: nav-items;
+}
+.profile_sec{
+  background-color: seagreen;
+  grid-area: profile;
+}
+.setting{
+  grid-area: setting;
+  background-color: #fff;
+}
+.book-sec{
+  grid-area: book-sec;
+  background-color: brown;
+}
+
+.navbar{
+  grid-area: navbar;
+  background-color: aqua;
+}
+
+.category_sec{
+  grid-area: category;
+  background-color: darksalmon;
+}
+
+.card{
+  grid-area: card;
+  background-color:darkcyan;
+}
+.card1{
+  grid-area: card1;
+  background-color:darkslategray;
+}
+
+.pagination{
+  grid-area: pagination;
+  background-color: darkkhaki;
+}
+.footer{
+  grid-area: footer;
+  background-color: darkorange;
+}
+
