@@ -4,23 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
     <aside class="sidebar">
       <div class="logo">
+        <div>
+          <i class="ri-book-open-line"></i>
+        </div>
         <h1>Book Library</h1>
       </div>
-      <div class="nav-items"></div>
-      <div class="setting"></div>
-      <div class="book-sec"></div>
+      <div class="nav-items">
+        <div class="item item1">
+          <i class="ri-home-4-line"></i>
+          <h6>Dashboard</h6>
+        </div>
+        <div class="item item2">
+          <i class="ri-book-open-line"></i>
+          <h6>All Books</h6>
+        </div>
+        <div class="item item3">
+          <i class="ri-bookmark-2-line"></i>
+          <h6>Borrowed</h6>
+        </div>
+        <div class="item item4">
+          <i class="ri-heart-line"></i>
+          <h6>Favorite</h6>
+        </div>
+        <div class="item item5">
+          <i class="ri-apps-line"></i>
+          <h6>Categories</h6>
+        </div>
+        <div class="item item6 active">
+          <i class="ri-home-4-line"></i>
+          <h6>Add New Book</h6>
+        </div>
+      </div>
+
+      <div class="setting">
+        <div class="item item7">
+          <i class="ri-settings-5-line"></i>
+          <h6>Settings</h6>
+        </div>
+        <div class="item item8">
+      <i class="ri-logout-box-r-line"></i>
+          <h6>Logout</h6>
+        </div>
+      </div>
+      
+      
+      <div class="book-sec">
+        <img src="./assests/ChatGPT Image Jun 15, 2026, 05_23_00 PM.png" alt="">
+        <h3>Keep reading <br> keep growing</h3>
+        <p>Your library, your world.</p>
+      </div>
     </aside>
-    <div class="profile_sec">Profile pic </div>
-    <nav class="navbar"></nav>
-    <div class="category_sec"></div>
-    <div class="card"></div>
-    <div class="card1"></div>
+    <div class="profile_sec">
+      <div class="welcome-section">
+        <div class="menu"><i class="ri-menu-line"></i></div>
+        <div class="introduction-sec">
+          <h1>Welcome back, Yaseen! 👏</h1>
+          <p>Manage your personal book collection</p>
+        </div>
+
+      </div>
+      <div class="right-side">
+        <div class="search-box">
+          <i class="ri-search-line"></i>
+          <input type="search" placeholder="Search books by tittle, author or category...">
+        </div>
+        <div class="profile-box">
+          <div class="profile-pic">
+            <img  src="./assests/my_pro_img-removebg-preview.png" alt="">
+          </div>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+      </div>
+      
+    </div>
+    <nav class="navbar">
+      <div class="nav-left">
+    
+        <h1>My Books</h1>
+      <p>Yoh have 12 books in your collection</p>
+      </div>
+      <div class="nav-right">
+        <div class="item add-btn">
+          <h6>Add New Book</h6>
+        </div>
+      </div>
+    </nav>
+    <div class="category_sec">
+      <div class="category-items">
+
+        <div class="item">
+          <i class="ri-book-open-line"></i>
+          <h6>All Books</h6>
+        </div>
+
+        <div class="item">
+          <i class="ri-book-open-line"></i>
+          <h6>All Books</h6>
+        </div>
+          
+        <div class="item">
+          <i class="ri-book-open-line"></i>
+          <h6>All Books</h6>
+        </div>
+
+        <div class="item">
+          <i class="ri-book-open-line"></i>
+          <h6>All Books</h6>
+      </div>
+    </div>
+    <div class="category-right">
+      <select >
+        <option disabled selected value="">
+          Sort by: Recently Added
+        </option>
+        <option  value="">
+          Sort by: Recently Added
+        </option>
+      </select>
+        <div class="app-box">
+          <div class="box1">
+            <img width="45" src="./assests/window_pn-removebg-preview.png" alt="">
+          </div>
+          <div class="box1">
+            <i class="ri-menu-fold-line"></i>
+          </div>
+        </div>      
+    </div>  
+    </div>
+    <div class="card">
+
+    </div>
+    <div class="card1">
+
+    </div>
     <div class="pagination"></div>
     <div class="footer"></div>
   </main>

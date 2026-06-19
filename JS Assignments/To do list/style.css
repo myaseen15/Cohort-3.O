@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Habibi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Lilita+One&family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&family=Yellowtail&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 html, body {
   width: 100%;
   height: 100%;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -15,6 +17,13 @@ main{
   height: 100vh;
   border: solid;
   display: grid;
+  /* padding: 10px 20px 10px 20px; */
+  /* gap: 10px; */
+  background-color: #fff;
+  grid-template-columns: 20% 80% ;
+grid-template-rows:90px 100px 70px ;
+/* grid-template-rows: repeat(7,minmax(20px , 1fr)); */
+
   grid-template-areas: "sidebar profile profile profile profile"
                         "sidebar navbar navbar navbar navbar"
                         "sidebar category category category category"
@@ -27,49 +36,229 @@ main{
 
 
 .sidebar{
+  padding: 10px 0;
   grid-area: sidebar;
-  background-color: red;
+   background-color: white;
   display: grid;
-  grid-template-areas: "logo"
+  justify-content: center;
+  /* gap: 10px; */
+  grid-template-rows: auto;
+  /* grid-template-columns: 350px; */
+  grid-template-areas: "logo" 
                         "nav-items"
                         "nav-items"
-                        "setting"
-                        "book-sec"  
-  ;
+                        "setting"  
+                        "book-sec";
 }
 
 .logo{
-  background-color: gold;
+  padding-top: 1px;
   grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo i {
+  font-size: 30px;
+  color: #6C63FF;
+}
+
+.nav-items{
+  margin-top: 21px;  
+  grid-area: nav-items;
+  display: grid;
+  grid-template-rows: repeat(6, 45px);
+}
+.item{
+  display: flex;
+  padding-left: 0.9rem;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #5f6369;
+}
+
+.item:hover{
+
+  background-color:gray;
+  color: white;
+  border-radius: 8px;
 
 }
-.nav-items{
-  background-color: dimgray;
-  grid-area: nav-items;
-}
-.profile_sec{
-  background-color: seagreen;
-  grid-area: profile;
-}
+/* .item.active{
+  background-color: #6C63FF;
+  color: white;
+  border-radius: 8px;
+} */
+
 .setting{
+  margin-top: 10px;
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: repeat(2, 40px);
+  gap: 5px;
   grid-area: setting;
-  background-color: #fff;
+  /* background-color: olive; */
+  margin-bottom: 5px;
 }
 .book-sec{
+  background-color: #efe8fc;
   grid-area: book-sec;
-  background-color: brown;
+  border-radius: 10px;
+  padding: 4px 15px;
+
 }
 
+.book-sec img {
+  width: 100px;
+}
+
+.book-sec p{
+  font-size: 0.9rem;
+}
+
+
+.profile_sec{
+  /* background-color: seagreen; */
+  grid-area: profile;
+  border: solid grey;
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-section{
+  border: solid;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.menu i{
+  font-size: 40px;
+  color: rgb(77, 74, 74);
+}
+.introduction-sec h1{
+  font-family: "poppins" sans-serif;
+  line-height: 1;
+  font-size: 30px;
+}
+.introduction-sec p{
+  font-weight: 600;
+  color: gray;
+}
+
+.right-side{
+  /* border: solid; */
+  display: flex;
+  color: #4f5257;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.search-box{
+  border:1px  solid rgb(68, 65, 65);
+  padding: 5px 5px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.search-box  input{
+  
+  padding: 5px 0px 5px 0 ;
+  width: 350px;
+  outline: none;
+  border: none;
+}
+.profile-box{
+  /* border: solid; */
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.profile-box i {
+  font-size: 20px;
+}
+.profile-pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-pic img{
+  /* border: solid; */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  background-color: #948fe6;
+}
 .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2rem;
   grid-area: navbar;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
+.nav-left h1{
+  font-size: clamp(1rem,5vw,2.5rem  );
+}
+.nav-left p{
+  font-size: clamp(0.5rem,5vw,1rem  );
+  font-weight: 600;
+  color: #747679;
+}
+.navbar .add-btn {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #5d55f3;
+  padding: 12px 18px;
+  border-radius: 6px;
+}
+.navbar .add-btn:hover{
+  /* background-color: gray; */
+  /* opacity: 0.5; */
+  background-color: #7155f1;
+}
 .category_sec{
+
   grid-area: category;
   background-color: darksalmon;
+  display: flex;
+  border: solid;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-items{
+  display: flex;
+  gap: 20px;
 }
 
+.category-right{
+  display: flex;
+  /* border: solid; */
+
+}
+.category-right select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.category-right select option{
+  border: solid;
+  
+}
 .card{
   grid-area: card;
   background-color:darkcyan;
