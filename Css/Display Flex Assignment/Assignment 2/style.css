@@ -41,8 +41,18 @@ header nav ul li.active{
   color: green;
   font-size: 16px;
 }
-header nav ul li.active::after{
-  
+
+header nav ul .list-item:hover{
+  cursor: pointer;
+  color: green;
+ }
+button{
+  transition: all 0.3s ease;
+}
+ button:hover{
+  scale: 0.8;
+ }
+header nav ul li.active::after{  
   content: "";
   border: 2px solid;
   display: flex;
